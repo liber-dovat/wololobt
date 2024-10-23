@@ -5,3 +5,9 @@ powered on, like a _console_.
 - Xbox series controller:
   - Four blinking patterns found.
   - To Check: When power it on, does it connect to the last device used? 
+
+  1. Controller turns on with the Xbox button. It scans in dongle mode by default (?). Pattern: Blink wait blink wait...
+  2. Double-tap pair, and it scans in Bluetooth mode. Pattern: Blink blink wait blink blink wait... (sometimes it sends a Bluetooth packet).
+  3. Press pair twice to switch back to dongle scan. Pattern: Blink wait blink wait...
+  4. Holding down pair for 3 seconds enters pair mode to pair with the dongle or Bluetooth; it sends bluetooth packets.
+  5. If the controller is off, holding down pair for 3 seconds will turn on the controller in unknown Bluetooth mode (blink blink blink...). Tapping pair twice will take it to step 3). Will it connect with the last paired device?
