@@ -1,6 +1,12 @@
 #!/bin/bash
 
 # * * * * * if ! screen -list | grep -q "BLUETOOTH_ON"; then echo "Screen session is open."; else echo "No screen sessions are open."; fi
+# cat /proc/cpuinfo
+# Hardware: BCM2835
+# Revision: 000f
+# cat /sys/firmware/devicetree/base/model
+# cat /proc/device-tree/model
+# $: pinout
 
 exec 200>bluetooth.lock || exit 1
 flock -n 200 || { echo "Lock already taken. Script is already running."; exit 1; }
