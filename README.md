@@ -2,7 +2,15 @@ Power on an offline PC using wakeonlan if any known bluetooth devices are powere
 The original idea is to power the PC on when an bluetooth capable xbox controller is
 powered on, like a _console_.
 
-- Xbox series controller:
+# HD Setup
+My personal setup is a raspberry pi zero W running the script in a screen session, connected through Ethernet to the router, the same as the PC.
+
+## Setup bluetoothctl
+    pi@raspberrypi ~ $ sudo apt-get install bluetooth libbluetooth3 libusb-dev
+    pi@raspberrypi ~ $ sudo systemctl enable bluetooth.service
+    pi@raspberrypi ~ $ sudo usermod -G bluetooth -a pi
+
+# Xbox series X|S controller:
   - Four blinking patterns found.
   - To Check: When power it on, does it connect to the last device used? 
 
