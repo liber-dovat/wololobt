@@ -6,6 +6,8 @@ The original idea is to power on the PC when an bluetooth capable xbox controlle
 My personal setup is a raspberry pi zero W with a raspbian running the script in a screen session, connected through Ethernet to the router, the same as the PC.
 
 ## Setup bluetoothctl
+(from https://approxeng.github.io/approxeng.input/bluetooth.html)
+
     pi@raspberrypi ~ $ sudo apt-get install bluetooth libbluetooth3 libusb-dev
     pi@raspberrypi ~ $ sudo systemctl enable bluetooth.service
     pi@raspberrypi ~ $ sudo usermod -G bluetooth -a pi
