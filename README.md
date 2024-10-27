@@ -21,3 +21,5 @@ My personal setup is a raspberry pi zero W with a raspbian running the script in
   3. Press pair twice to switch back to dongle scan. Pattern: Blink wait blink wait...
   4. Holding down pair for 3 seconds enters pair mode to pair with the dongle or Bluetooth; it sends bluetooth packets.
   5. If the controller is off, holding down pair for 3 seconds will turn on the controller in unknown Bluetooth mode (blink blink blink...). Tapping pair twice will take it to step 3). Will it connect with the last paired device?
+
+![states](https://github.com/user-attachments/assets/c77961a7-eff7-4307-91af-ef260ef6dc7e)
