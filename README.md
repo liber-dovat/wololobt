@@ -13,13 +13,12 @@ My personal setup is a raspberry pi zero W with a raspbian running the script in
     pi@raspberrypi ~ $ sudo usermod -G bluetooth -a pi
 
 # Xbox Series X|S controller:
-  - Three blinking patterns found.
+  - Three blinking patterns found, plus a static light pattern.
   - To Check: When power it on, does it connect to the last device used? 
 
-  1. Controller turns on with the Xbox button. It scans in dongle mode by default (?). Pattern: Blink wait blink wait...
-  2. Double-tap pair, and it scans in Bluetooth mode. Pattern: Blink blink wait blink blink wait... (sometimes it sends a Bluetooth packet).
-  3. Press pair twice to switch back to dongle scan. Pattern: Blink wait blink wait...
-  4. Holding down pair for 3 seconds enters pair mode to pair with the dongle or Bluetooth; it sends bluetooth packets.
-  5. If the controller is off, holding down pair for 3 seconds will turn on the controller in unknown Bluetooth mode (blink blink blink...). Tapping pair twice will take it to step 3). Will it connect with the last paired device?
+  1. The controller remembers last paired state. When the controller is turned on it goes straight to the last connected state and tries to pair with that device. Blinking pattern of Dongle pairing: Blink stop...
+  2. From this two states (pairing/paired with Dongle|Bluetooth) if you press two times the pair button it switches back between this two states. If it was in Bluetooth pairing mode it switches back to 1). Blinking pattern of BT pairing: Blink blink stop...
+  3. In any of this two states, if you press the pair button for 3 seconds it enters pairing mode, and ties to pair with a new Dongle or Bluetooth device; in this state the controller sends bluetooth packets. Blinking pattern: Blink blink...
+  5. If the controller is off, holding down the pair button for 3 seconds will turn on the controller pairing mode as in 3). Blinking pattern: Blink blink... . This is the fastest way to power on the contoller and start sending Bluetooth packets; after this you can hold again the pair button for 3 seconds and it will switch to the last connected state.
 
 ![states](https://github.com/user-attachments/assets/e78fc0be-4648-4579-9532-b8552ef62e73)
