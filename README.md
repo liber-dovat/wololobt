@@ -14,7 +14,6 @@ My personal setup is a raspberry pi zero W with a raspbian running the script in
 
 # Xbox Series X|S controller:
   - Three blinking patterns found, plus a static light pattern.
-  - To Check: When power it on, does it connect to the last device used? 
 
   1. The controller remembers last paired state. When the controller is turned on it goes straight to the last connected state and tries to pair with that device. Blinking pattern of Dongle pairing: Blink stop...
   2. From this two states (pairing/paired with Dongle|Bluetooth) if you press two times the pair button it switches back between this two states. If it was in Bluetooth pairing mode it switches back to 1). Blinking pattern of BT pairing: Blink blink stop...
