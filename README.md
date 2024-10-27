@@ -22,4 +22,4 @@ My personal setup is a raspberry pi zero W with a raspbian running the script in
   4. Holding down pair for 3 seconds enters pair mode to pair with the dongle or Bluetooth; it sends bluetooth packets.
   5. If the controller is off, holding down pair for 3 seconds will turn on the controller in unknown Bluetooth mode (blink blink blink...). Tapping pair twice will take it to step 3). Will it connect with the last paired device?
 
-![states](https://github.com/user-attachments/assets/dd279b6a-d3b6-42fb-98aa-13374c729fcc)
+![states](https://github.com/user-attachments/assets/e78fc0be-4648-4579-9532-b8552ef62e73)
