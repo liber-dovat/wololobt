@@ -1,4 +1,4 @@
-# Wake On Lan On Bluetooth
+# Wake On Lan On Local On Bluetooth
 
 # Description
 Power on an offline PC using wakeonlan if any known bluetooth devices in the vecinity are powered on.
