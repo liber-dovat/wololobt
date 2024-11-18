@@ -2,7 +2,7 @@
 
 # Description
 Power on an offline PC using wakeonlan if any known bluetooth devices in the vecinity are powered on.
-The original idea is to power on the PC when an bluetooth capable xbox controller is powered on, like a _console_.
+The original idea is to power on the PC when an bluetooth capable xbox controller is powered on, just like a _console_ would turn on with the controller.
 
 # HD Setup
 My personal setup is a raspberry pi zero W with a raspbian running the script in a screen session, connected through Ethernet to the router, the same as the PC.
